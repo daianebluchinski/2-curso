@@ -7,15 +7,26 @@ function mostraPalavrasChave() {
   const campoResultado = document.querySelector('#resultado-palavrachave');
   const PalavrasChave = processaTexto()
   
-  // código omitido
+  
 
     campoResultado.textContent = PalavrasChave.join(', ');
 
 }
 
-// código omitido
 
-function processaTexto(texto){
-    let palavras = texto.split(/\P{L}+/u);
-        return palavras;
-        }
+
+function processa Texto (texto) {
+      let palavras = texto.split(/\P{L}+/u);
+          
+              let frequencias = [];
+                  for(let i in palavras) {                          frequencias [i] = 0;
+                                  for (let jin palavras) {
+                                              if (palavras[i]==palavras[j]){
+                                                              frequencias[i]++;
+                                                                          }
+                                                                                  }
+                                                                                      }
+                                                                                          console.log(frequencias);
+                                                                                              
+                                                                                                  return palavras;
+                                                                                                  }
