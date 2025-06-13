@@ -13,7 +13,9 @@ function mostraPalavrasChave() {
 
 }
 
-function processaTexto(texto) {
-    let palavras = texto.split(/[^a-zA-Z]+/);
-    return palavras;
-}
+// código omitido
+
+function processaTexto(texto){
+    let palavras = texto.split(/\P{L}+/u);
+        return palavras;
+        }
